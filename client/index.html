@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Converted Klines</title>
+</head>
+
+<body style="
+    background: rgb(46, 45, 45);
+">
+  <select name="tf" onchange="displayChart(this.value)" style="
+    background: #252424;
+    color: #e0e1a8;
+">
+    <option value="2m" default>2m</option>
+    <option value="3m">3m</option>
+    <option value="5m">5m</option>
+    <option value="10m">10m</option>
+    <option value="15m">15m</option>
+    <option value="1h">1h</option>
+  </select>
+  <div id="tvchart"></div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.8.0/socket.io.js"
+  integrity="sha512-OovVc8Xk/+ils70VE978+ILm2IvIisZskNCaDvaTtXt7a2O3eioYv8SVKfjdVU1za9Ir/KHIqweNEGLLFk6bdw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/lightweight-charts@5.0.0/dist/lightweight-charts.standalone.production.js"></script>
+<script src="kline.js"></script>
+<script src="index.js"></script>
+
+</html>

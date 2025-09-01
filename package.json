@@ -1,0 +1,11 @@
+{
+  "name": "tradingviewcombineklinesrealtime",
+  "version": "1.0.0",
+  "description": "This project demonstrates how to combine a real-time stream of candlestick data from lower timeframes (e.g., 1m) into higher timeframes (e.g., 5m, 15m, 1h) using JavaScript. The project includes a proxy that retrieves candlestick data via a WebSocket connection to Binance and emits real-time data to the client. The client then visualizes the aggregated data on a candlestick chart using the LightweightCharts library, along with corresponding volume data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
